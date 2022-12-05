@@ -1,0 +1,229 @@
+/* ========== 00. General Styling ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Noto Sans", HelveticaNeueCyr, Helvetica, sans-serif;
+    line-height: 1.68em;
+    color: #333333;
+    background: #fafafa;
+} */
+
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+section.t-bq-section {
+    padding: 30px;
+}
+
+.t-bq-wrapper.t-bq-wrapper-boxed {
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+    max-width: 100%;
+}
+
+.t-bq-wrapper .t-bq-quote {
+    padding: 20px;
+}
+
+/* ========== 01. Emma ========== */
+
+.t-bq-quote-emma {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    background: #ffffff;
+    padding: 0!important;
+    align-items: stretch;
+    border-radius: 20px;
+    box-shadow: 2px 2px 25px #cecece;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-qmark {
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Garamond, Georgia, serif;
+    font-size: 3em;
+    color: #666666;
+    line-height: 60px;
+    user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    border-top: 2px solid #eeeeee;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-qmark span {
+    padding-top: 0.25em;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-userpic {
+    flex-basis: 150px;
+    width: 150px;
+    min-width: 150px;
+    max-height: 300px;
+    background: url("../../public/Polestar.png") center center no-repeat;
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base {
+    flex-basis: calc(100% - 150px);
+    padding: 60px 30px 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text {
+    font-size: 0.85em;
+    line-height: 1.8em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text:after {
+    content: "\2014\00A0" attr(cite);
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-emma {
+        flex-direction: column;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-base {
+        padding-top: 0;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-userpic {
+        border-radius: 20px;
+        height: 150px;
+        margin: 40px auto 20px auto;
+    }
+
+    .t-bq-quote-emma .t-bq-quote-emma-base .t-bq-quote-emma-text {
+        font-size: 1em;
+    }
+}
+
+
+/* ========== 02. Pooja ========== */
+
+.t-bq-quote-pooja {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    background: #ffffff;
+    padding: 0!important;
+    align-items: stretch;
+    border-radius: 20px;
+    box-shadow: 2px 2px 25px #cecece;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-qmark {
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Garamond, Georgia, serif;
+    font-size: 3em;
+    color: #666666;
+    line-height: 60px;
+    user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    border-top: 2px solid #eeeeee;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-qmark span {
+    padding-top: 0.25em;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-userpic {
+    flex-basis: 150px;
+    width: 150px;
+    min-width: 150px;
+    max-height: 300px;
+    background: url("../../public/poojaPolestar.jfif") center center no-repeat;
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-base {
+    flex-basis: calc(100% - 150px);
+    padding: 60px 30px 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-base .t-bq-quote-pooja-text {
+    font-size: 0.85em;
+    line-height: 1.8em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.t-bq-quote-pooja .t-bq-quote-pooja-base .t-bq-quote-pooja-text:after {
+    content: "\2014\00A0" attr(cite);
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-pooja {
+        flex-direction: column;
+    }
+
+    .t-bq-quote-pooja .t-bq-quote-pooja-base {
+        padding-top: 0;
+    }
+
+    .t-bq-quote-pooja .t-bq-quote-pooja-userpic {
+        border-radius: 20px;
+        height: 150px;
+        margin: 40px auto 20px auto;
+    }
+
+    .t-bq-quote-pooja .t-bq-quote-pooja-base .t-bq-quote-pooja-text {
+        font-size: 1em;
+    }
+}
